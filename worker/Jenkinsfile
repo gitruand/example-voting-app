@@ -10,8 +10,8 @@ pipeline {
             steps {
                 echo 'Compiling worker app'
                 dir{'worker'}{
-                    sh 'mvn compile'
-                 }
+                  sh 'mvn compile'
+                }
             }
         }
         stage('test') {
